@@ -7,6 +7,8 @@ Pheddar is a port of the Ruby library [Cheddar](https://github.com/kparnell/ched
 The basics.
 
 ```php
+<?php
+
 use Pheddar\Human;
 
 Human::to_number('15 hundred');
@@ -22,6 +24,8 @@ Human::to_number('15.72 vigintillion');
 Slightly more advanced.
 
 ```php
+<?php
+
 Human::to_number('25 bucks');
 // => 25
 
