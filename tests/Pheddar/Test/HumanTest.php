@@ -24,8 +24,8 @@ class HumanTest extends \PHPUnit_Framework_TestCase
 	public function provider_convert_integers()
 	{
 		return array(
-			'5'  => 5,
-			'10' => 10,
+			array('5', 5),
+			array('10', 10),
 		);
 	}
 
@@ -51,8 +51,8 @@ class HumanTest extends \PHPUnit_Framework_TestCase
 	public function provider_convert_floats()
 	{
 		return array(
-			'5.5'  => 5.5,
-			'10.5' => 10.5,
+			array('5.5', 5.5),
+			array('10.5', 10.5),
 		);
 	}
 
@@ -123,8 +123,8 @@ class HumanTest extends \PHPUnit_Framework_TestCase
 	public function provider_strip_unknown_entities()
 	{
 		return array(
-			'5.5 & thousand' => 5500,
-			'5,500' => 5500,
+			array('5.5 & thousand', 5500),
+			array('5,500', 5500),
 		);
 	}
 
@@ -163,9 +163,9 @@ class HumanTest extends \PHPUnit_Framework_TestCase
 	public function provider_convert_money()
 	{
 		return array(
-			'$5.2 million' => 5200000,
-			'10 big ones'  => 10000,
-			'10 large'     => 10000,
+			array('$5.2 million', 5200000),
+			array('10 big ones', 10000),
+			array('10 large', 10000),
 		);
 	}
 
