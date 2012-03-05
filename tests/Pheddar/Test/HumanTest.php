@@ -109,7 +109,7 @@ class HumanTest extends \PHPUnit_Framework_TestCase
 	 * 
 	 * @test
 	 */
-	public function test_convert_hundreds()
+	public function test_convert_decimals()
 	{
 		$result = Human::to_number('5.5 million');
 		$this->assertSame(5500000, $result);
@@ -177,7 +177,7 @@ class HumanTest extends \PHPUnit_Framework_TestCase
 	 * @param  string   $str       Human string to parse
 	 * @param  integer  $expected  Expected integer
 	 */
-	public function test_strip_unknown_entities($str, $expected)
+	public function test_convert_money($str, $expected)
 	{
 		$result = Human::to_number($str);
 		$this->assertSame($expected, $result);
