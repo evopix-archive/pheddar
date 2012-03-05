@@ -1,0 +1,21 @@
+{
+    "name": "evopix/pheddar",
+    "description": "PHP library to convert human readable strings to numbers",
+    "keywords": ["numbers", "conversion", "human"],
+    "homepage": "https://github.com/evopix/pheddar",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brandon Summers",
+            "email": "brandon@brandonsummers.name",
+            "homepage": "http://brandonsummers.name/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": { "Pheddar": "src/" }
+    }
+}
