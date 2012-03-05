@@ -1,6 +1,6 @@
 # Pheddar - Transform human readable text into integers or floats.
 
-Pheddar is a port of the Ruby library (Cheddar)[https://github.com/kparnell/cheddar].
+Pheddar is a port of the Ruby library [Cheddar](https://github.com/kparnell/cheddar).
 
 ## Examples
 
